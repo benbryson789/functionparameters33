@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Funciton with Parameters</title>
+</head>
+<body>
+<script>
+	function calculateBill(billAmount) {
+    var Tip;
+    if (billAmount < 50) {
+        Tip = .20 * billAmount;
+    } else if  (billAmount >= 50 && billAmount <= 200){
+        Tip = billAmount * .15;
+    } else if (billAmount > 200) {
+        Tip = billAmount * .10;
+    }
+    console.log(Tip);
+    console.log(billAmount);
+}
+
+calculateBill(124);
+calculateBill(48);
+calculateBill(268);
+
+</script>
+</body>
+</html>
